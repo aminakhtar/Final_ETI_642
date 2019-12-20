@@ -1,0 +1,42 @@
+.logoimg{
+    width: 160px;
+    height: 80px;
+    margin: 5px;
+    float: left;
+}
+.topbar{
+    margin: 0px;
+    background-color: #40738d;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #40738d;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+  .flex-container{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
+  }
+  .flex-container li a{
+    justify-content: center;
+  }
