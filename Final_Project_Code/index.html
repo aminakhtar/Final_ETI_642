@@ -6,22 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Employee Training Institute</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/skeleton.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+
 </head>
 <body>
     <div class="topbar">619-388-4967</div>
-    <img class="logoimg" src="Assets/logo.png" alt="logo">
-    <div>
-        <ul class="flex-container">
-            <li><a>Employers</a></li>
-            <li><a>Students</a></li>
-        </ul>
+    
+    <div class="twelve columns">
+        <div class="eight columns">
+            <img class="logoimg" src="Assets/logo.png" alt="logo">
+        </div>
+        <div class="four columns menu">
+            <ul>
+                <li><a>Employers</a></li>
+                <li><a>Students</a></li>
+                <li><a>About ETI</a></li>
+            </ul>
+        </div>
     </div>
+    
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -39,8 +49,7 @@
                 <img class="d-block w-100" src="Assets/img4.jpg" alt="Third slide">
             </div>
             <div class="carousel-caption d-none d-md-block">
-                <h2 class="flex-container" id="bannersubject">The skills you need to succeed</h2>
-                <button class="btn btn-success">More Info</button>
+                <h1 class="container" id="bannersubject">The skills you need to succeed</h1>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -52,39 +61,42 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="triangle"></div>
+    <!-- Triangle -->
     <div class="box">
          <div id="learnerparagraph">Learn More About The Training Programs We Offer</div>
     </div>
-    <div class="row">
-        <div class="column">
-            <a class="img-hover-zoom"  id="emplink" href="http://www.google.com" target="_blank">
-                <img id="empimg" src="Assets/employer_writing.jpg" alt="employer" width="750">
-            </a>
-        </div>
-        <div class="column">
-            <a class="img-hover-zoom"  id="stlink" href="http://www.google.com" target="_blank">
-                <img id="stimg" src="Assets/student_writing.jpg" alt="student" width="750" >
-            </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <a class="img-hover-zoom"  id="emplink" href="http://www.google.com" target="_blank">
+                    <img id="empimg" class="img-fluid" src="Assets/employer_writing.jpg" alt="employer" width="750">
+                </a>
+            </div>
+            <div class="col-6">
+                <a class="img-hover-zoom"  id="stlink" href="http://www.google.com" target="_blank">
+                    <img id="stimg" class="img-fluid" src="Assets/student_writing.jpg" alt="student" width="750" >
+                </a>
+            </div>
         </div>
     </div>
-    <div  class="flex-container">
-        <h3>ETI Is Your Solution</h3>
+
+    <div  class="container text-center">
+        <h1 class="ETISolution">ETI Is Your Solution</h1>
     </div>
-    <div class="flex-container">
+    <div class="container text-center">
         <p id="solutionbody">
             San Diego Community Colleges District’s Employee Training Institute (ETI) provides expertise and skills development to organizations and individuals, helping you do whatever you do, and do it better!
             We contribute to the economic development of the San Diego region to offer programs and services that complement those of the San Diego Community Colleges. 
         </p>
     </div>
-    <div class="flex-container">
-        <button type="button" class="btn btn-success">About ETI</button>
+    <div class="container text-center">
+        <button type="button" class="btn btn-success btnsuccess">About ETI</button>
     </div>
-    <hr>
+
     <div class="flex-container bckblue">
         <iframe width="1000" height="500" src="https://www.youtube.com/embed/08kKW7kWTK8"></iframe>
     </div>
-    <hr>
+
     <div class="flex-container">
         <h3>Some of our clients</h3>
     </div>
@@ -94,19 +106,48 @@
         <img class="logos" src="Assets/marine.png" alt="" width="200px" height="200px">
         <img class="logos" src="Assets/sdcommunity.png" alt="" width="200px" height="200px">
     </div>
-    <div id="container">
-        <div class="squarefooter"></div>
-        <div class="trianglefooter"></div>
-        <div class="trianglefooterleft"></div>
-    </div>
-    <div class="green-rectangle">
-        <p id="footerinfo">
-            Employee Training Institue <br>
-            <a href="https://www.google.com/maps/place/Educational+Cultural+Complex/@32.6991351,-117.1037529,17z/data=!3m1!4b1!4m5!3m4!1s0x80d953c70da4a5bf:0xf48780b57976dd16!8m2!3d32.6991351!4d-117.1015642">4343 Ocean View Blvd. <br>
-            San Diego CA 92113 <br></a>
-            613.388.1250<br>
-        </p>
-    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="row row1">
+                <div class="ten columns">
+            <h1 class="footmainheader">Invest In Your Future <br>Talk To Us</h1>
+            </div>
+            
+                <div class="two columns social">
+                    <a href="https://www.facebook.com/">
+                        <img class="social-img1" src="/Assets/facebooklogoBW.png" alt="facebook logo">
+                    </a>
+                    <a href="https://twitter.com/?lang=en">
+                        <img class="social-img2" src="/Assets/twitterlogoBW.png" alt="twitter logo">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img class="social-img3" src="/Assets/linkedInlogo4.png" alt="linked in logo">
+                    </a>
+                </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="six columns footerdescription">
+                <p>Let ETI help you take to the next level. We provide referrals upon request to potential clients that wish to speak with current and past clients.</p>
+            </div>
+            <div class="six columns">
+                <p>Address</p>
+                    <hr>
+                   <p> Kay Faulconer Bogan<br>
+                    Director of Industry Partnerships
+                </p>
+                <p>
+                    kfboger@sdccd.edu<br>
+                    619.388.4967
+                </p>
+            </div>
+            <div class="seven columns button-div">
+            <input class="button" type="submit" value="submit input">
+            </div>
+        </div>
+        </div>
+
+    </footer>
 
 </body>
 </html>
