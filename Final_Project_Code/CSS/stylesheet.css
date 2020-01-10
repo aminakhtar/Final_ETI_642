@@ -18,6 +18,27 @@
     text-align: right;
     padding-right: 20px;
 }
+/*
+#bannersubject{
+  background-color: rgb(100, 132, 146);
+  margin: 30px;
+  font-size: 3rem;
+  border-radius: 10%;
+}*/
+/* [1] The container */
+.img-hover-zoom {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
 
 /* --- index page --- */
 #learnerparagraph { /* --- index  page ---*/
@@ -32,9 +53,9 @@
   margin: 5px; /*--- decreased margin from 50px to 20px --- */
    /* --- removed from page and to stylesheet --- */
 }
-.logos .img-thumbnail {
-  height: 50px;
-  width: 50px;
+img.logos.img-thumbnail {
+  height: 100px;
+  width: 100px;
   border-radius: 0px;
 }
 .img-thumbnail {
