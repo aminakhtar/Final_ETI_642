@@ -26,7 +26,9 @@ li a {
     color: #40738d;
     font-weight: bold;
 }
+
 /* --- index page --- */
+
 /*#bannersubject{
     background-color: rgb(100, 132, 146);
     margin: 30px;
@@ -53,6 +55,13 @@ li a {
 .bckblue { /* --- index page --- */
     background-color: #40738d;
 }
+.img-thumbnail {
+    border: 0px;  
+  } 
+img.logos.img-thumbnail {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  } 
 .logos { /*--- logos for eti customers, index page --- */
     margin: 5px; /*--- decreased margin from 50px to 20px --- */
    /* --- removed from page and to stylesheet --- */
