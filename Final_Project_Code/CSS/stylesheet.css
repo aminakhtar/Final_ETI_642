@@ -1,7 +1,7 @@
 /* --- all pages ---*/
 .col {  /* --- full width for top logoimg, topbar, nav, img --- */
-  padding-right: 0px;
-  padding-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .logoimg {  /* --- top left ETI logo --- */
     width: 180px;
@@ -24,22 +24,35 @@
   margin: 30px;
   font-size: 3rem;
 }
-/* [1] The container */
-.img-hover-zoom {
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+/* --- nav --- */
+nav {
+    margin: 30px 0px;
 }
-
-/* [2] Transition property for smooth transformation of images */
-.img-hover-zoom img {
-  transition: transform .5s ease;
-}
-
-/* [3] Finally, transforming the image when container gets hovered */
-.img-hover-zoom:hover img {
-  transform: scale(1.1);
+li a {
+    color: #40738d;
+    font-weight: bold;
 }
 
 /* --- index page --- */
+
+/*#bannersubject{
+    background-color: rgb(100, 132, 146);
+    margin: 30px;
+    font-size: 3rem;
+    border-radius: 10%;
+}*/
+/* [1] The container */
+.img-hover-zoom {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
 #learnerparagraph { /* --- index  page ---*/
   margin: 50px 0px;
   text-align: center;
@@ -50,21 +63,28 @@
   margin: 50px 0px;
 }
 .bckblue { /* --- index page --- */
-  background-color: #40738d;
+    background-color: #40738d;
 }
+.img-thumbnail {
+    border: 0px;  
+  } 
+img.logos.img-thumbnail {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  } 
 .logos { /*--- logos for eti customers, index page --- */
-  margin: 5px; /*--- decreased margin from 50px to 20px --- */
+    margin: 5px; /*--- decreased margin from 50px to 20px --- */
    /* --- removed from page and to stylesheet --- */
 }
 img.logos.img-thumbnail {
-  border-radius: 0px;
+    border-radius: 0px;
 }
 .img-thumbnail {
-  border-radius: 0px;
+    border-radius: 0px;
 }
 .col-3 {
-  padding-left: 5px;
-  padding-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .nav a{
   margin: 10px 0px;
@@ -93,23 +113,25 @@ img.logos.img-thumbnail {
     font-size: 1.3rem;*/
   }
 
-  .flex-container{
+.flex-container{
     display: flex;
     justify-content: center;
     margin: 15px 0px;
-  }
-  /*.flex-container li a{
+}
+/*.flex-container li a{
     justify-content: center;
-  }*/
-  /*------About ETI CSS-----*/
-  .room { /* --- margin for top img ---*/
+}*/
+
+ /*------About ETI CSS-----*/
+
+.room { /* --- margin for top img ---*/
     margin-bottom: 20px;
   }
-  .mission {  /* ---css for margin above rows --- */
+.mission {  /* ---css for margin above rows --- */
     margin-top: 20px;
 }
 .about-text { /* --- margin about col-md-8 ---*/
-  margin-top: 20px;
+    margin-top: 20px;
 }
 .title-left { /* --- col-md-4 --- */
     text-align: left;
@@ -119,94 +141,102 @@ img.logos.img-thumbnail {
 .why-card { /* --- margin for cards --- */
     margin-top: 30px;
     margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card-body { /* --- three cards ---*/
+  padding: 20px 15px 20px 15px;
+  line-height: 1.2rem;
+}
+.card {
+  border: 1px solid rgb(193, 222, 238);
 }
 .thumb-nail {
-  height: 200px;
-  width: auto;
+    height: 200px;
+    width: auto;
 }
+.border-bottom { /* --- hr title border --- */
+    border-bottom: 2px solid #9BC2DB !important;
+}
+.border-left {
+    border-left: 2px solid #71A9CC !important;
+}
+
 /*----read more read less----*/
 #summary {
-  line-height: inherit;
+    line-height: inherit;
 }
 #summary p.collapse:not(.show) {
-  height: 120px !important;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;  
+    height: 120px !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
 }
 #summary p.collapsing {
-  min-height: 42px !important;
+    min-height: 42px !important;
 }
 #summary a.collapsed:after  {
-  content: '+ Read More';
+    content: '+ Read More';
 }
 #summary a:not(.collapsed):after {
-  content: '- Read Less';
+    content: '- Read Less';
 }
 /* 2nd read more read less */
 #summary1 {
-  line-height: inherit;
+    line-height: inherit;
 }
 #summary1 p.collapse:not(.show) {
-  height: 120px !important;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;  
+    height: 120px !important;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
 }
 #summary1 p.collapsing {
-  min-height: 42px !important;
+    min-height: 42px !important;
 }
 #summary1 a.collapsed:after  {
-  content: '+ Read More';
+    content: '+ Read More';
 }
 #summary1 a:not(.collapsed):after {
-  content: '- Read Less';
+    content: '- Read Less';
 }
 
 
 /*Jesse*/
 footer {
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 10px;
-  background-color: black;
-  color: white;
- /* margin: 10px 0px;*/
-  /*padding-left: 50px;*/
-  /*overflow: hidden;*/
-  /*min-width: 100%;*/
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
 }
 .social {
-  margin-top: 10px;
-  /*height: 200px;*/
- /* display: flex;
-  align-items: flex-end;
-  margin-left: 0;*/
+    margin-top: 10px;
 }
 .future {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 .talk {
-  padding-top: 40px;
+    padding-top: 40px;
 }
 .invest {
-  font-weight: bold;
-  font-size: 2.5rem;
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 .footerdescription {
-  font-style: italic;
+    font-style: italic;
 }
 .row location {
-  margin-left: 0px;
-  margin-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .location {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .location a {
-  color: white;
+    color: white;
 }
 .map {
   height: 75%;
@@ -215,115 +245,17 @@ footer {
   border: 0;
 }
 .award {
-  background-color: white;
-  padding: 10px;
+    background-color: white;
+    padding: 10px;
 }
 .social .img-thumbnail {
-  height: 30px;
-  margin: 5px;
-}
-/*a img.social-img3 {
-  max-width: 70%;
-}*/
-/*footer div.container {
-  /*max-width: 100%;
-  padding-bottom: 6rem;
-}*/
-/*footer div.container div.row {
-  margin-right: 0;
-  margin-left: 6%;
-}*/
-/*hr {
-  width: 7%;
-  margin-left: 6%;
-  border-width: 3px !important;
-  background-color: white;
-}*/
-/*footer .social a {
-  background-color: white;
-  height: auto;
-  width: 100%;
-  border-radius: 68%;
-  margin-right: 7%;
-}*/
-/*footer div.six:nth-of-type(2) {
-  color: white;
-  font-size: 2rem;
-  padding-left: 31%;
-}*/
-/*footer div.six hr {
-  margin-left: 0;
-}
-footer input.button {
-  background-color: white;
-  width: 28%;
-  height: 61px;
-  font-size: 1.5rem;
-}
-footer div.button-div {
-  margin-left: 0;
-}*/
-
-/*@media (max-width: 549px) {
-  footer h1.footmainheader {
-      font-size: 10rem;
-  }
-  .row ~hr {
-      position: relative;
-      bottom: 184px;
-      width: 23%;
-  }
-  footer div.six:nth-of-type(2) {
-      padding-left: 0;
-      flex-direction: row;
-  }
-  footer input.button {
-      background-color: white;
-      width: 28%;
-      height: 61px;
-      font-size: 2vw;
-      padding: 0px;
-  }
-}
-@media (min-width: 550px) and (max-width: 1289px) {
-  footer div.six:nth-of-type(2) {
-      padding-left: 18%;
-  }
-  footer div.social {
-      display: flex;
-      height: 476px;
-      align-items: flex-end;
-      margin-left: 0;
-      flex-direction: column;
-      margin-top: auto;
-      justify-content: center;
-  }
-  footer div.social a {
-      width: 80%;
-  }
-}
-#myBtn {
-  display: none; 
-  position: fixed; 
-  bottom: 20px; 
-  right: 30px; 
-  z-index: 99; 
-  outline: none;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 18px;
-  color: #007bff;
+    height: 30px;
+    margin: 5px;
 }
 
-<<<<<<< Updated upstream
-#myBtn:hover {
-  background-color: #007bff;
-  color: white;
-}*/
-=======
 /* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
     text-align: left;
     font-size: 26px;
     font-weight: 400;
@@ -334,19 +266,19 @@ footer div.button-div {
 <<<<<<< Updated upstream
 #mission-1, #mission-2, #mission-3, 
 #partner-1, #partner-2, #partner-3, #partner-4, #partner-6, #partner-7, #partner-8, #partner-9, #partner-10 {
-  display: table-cell;
-  padding: 0px;
-  color: white;
-  vertical-align: middle;
+    display: table-cell;
+    padding: 0px;
+    color: white;
+    vertical-align: middle;
 }
 #partner-5 {
-  display: table-cell;
-  padding: 0px;
-  color: black;
-  vertical-align: middle;
+    display: table-cell;
+    padding: 0px;
+    color: black;
+    vertical-align: middle;
 }
 #partner-1, #partner-2, #partner-3, #partner-4, #partner-6, #partner-5, #partner-7, #partner-8, #partner-9, #partner-10 {
-  margin: 5px;
+    margin: 5px;
 }
 #mission-1, #partner-1 ,#partner-10 {
   /* background-color:#96CC89; */
@@ -366,8 +298,7 @@ footer div.button-div {
 #partner-6 {
   /* background-color:#7C7E7F; */
 } 
->>>>>>> Stashed changes
-=======
+
 .clientimg{
   margin: 15px;
 }
@@ -376,4 +307,4 @@ footer div.button-div {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
->>>>>>> Stashed changes
+
