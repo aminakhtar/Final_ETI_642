@@ -16,34 +16,45 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col">    
+            <div class="col">
                 <header>
                     <div class="topbar">619-388-4967</div>
-                    <img class="logoimg" src="Assets/logo.png" alt="logo">
                 </header>
             </div>
-        </div>
-        <div class="row">
+        </div>    
+        <!--<div class="row">
             <div class="col">
-                <nav>
-                    <ul class="nav justify-content-center">
+                <img id="logoimg" src="Assets/logo.png" alt="logo">
+            </div>
+        </div>-->
+        <div class="row">
+            <div class="col d-flex justify-content-center">            
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="Assets/logo.png" width="180" height="80" alt="ETI logo">
+                    </a>
+                    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Employers</a>
+                            <a class="nav-link" href="#">Employers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Students</a>
+                            <a class="nav-link" href="studnets.html" target="_blank">Students</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About ETI</a>
+                            <a class="nav-link" href="about.html" target="_blank">About ETI</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <main>
-        <div class="row">
+        <div class="row mission room align-items-center">
             <div class="col">
-                <h2 class="text-center room">Reshaping the Landscape of Learning Today</h2>
+                <h3 class="text-center room">Reshaping the Landscape of Learning Today</h3>
             </div>
         </div>
         <div class="row">
@@ -52,49 +63,48 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <main>
+        <div class="container">
             <div class="row mission">
-                <div class="col-md-4 col-sm-12 mission">
-                    <div class="title-left">
-                        <h3 class="border-bottom border-left">About<br>Employee Training Institute</h3>
-                    </div>
-                </div>
-                <div class="col-md-8 col-sm-12 mission">
-                    <div class="about-text">
-                        <div id="summary">
-                            <p class="collapse" id="collapseSummary">
-                            San Diego Community Colleges District’s Employee Training Institute (ETI) provides fee-based education and contract education programs to the San Diego region and beyond, with the goal of empowering students and the business community to earn degrees and skills certificates within many local industries.
-                            <br> 
-                            ETI also provides customized training for nonprofit organizations and public entities.<br>
-                            Instruction can take place either at the workplace or in ETI classrooms and learning labs. We offer day, evening and weekend training, developed around your organization's needs. ETI’s personalized approach allows organizations the flexibility of selecting dates, times, and even specific hours for a customized training program.<br> 
-                            ETI can also deliver comprehensive state-approved, accredited degree and certificate programs to your organization’s employees or clients.<br>
-                            ETI faculty are experts. All faculty are required to know and teach current trends and the latest advancements in their discipline or industry.<br>
-                            ETI is committed to maintaining our 40-year reputation as the leading workforce development training institution in the San Diego region, so we keep overhead costs at a minimum to ensure we can offer exceptional programs at the most competitive rate.</p>
-                            <a class="collapsed" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
-                        </div>
-                    </div>
+                <div class="col-5"> 
+                    <h4 class="border-bottom border-left">Our <br>Mission</h4> 
                 </div>
             </div>
-            <div class="row mission">
-                <div class="col-md-4 col-sm-12">
-                    <div class="title-left">
-                        <h3 class="border-bottom border-left">Our <br>Mission</h3> 
-                    </div>
-                </div>
-                <div class="col-md-8 col-sm-12">
+            <div class="row mission"> 
+                <div class="col-md-10 offset-md-2">
                     <p>Provide expertise and skill development to organizations and individuals, helping you do whatever you do, and do it better.<br>
                     Contribute to the economic development of San Diego region.<br>
                     Offer programs and services that complement those of the San Diego Community Colleges.</p>
                 </div>
             </div>
             <div class="row mission">
-                <div class="col-md-4 col-sm-12">
-                    <div class="title-left">
-                        <h3 class="border-bottom border-left">Our <br>Approach</h3>
+                <div class="col-5"> 
+                    <h4 class="border-bottom border-left">About<br>Employee Training Institute</h4>
+                </div>
+            </div>
+            <div class="row mission"> 
+                <div class="col-md-10 offset-md-2">
+                    <div id="summary">
+                        <p class="collapse" id="collapseSummary">
+                        San Diego Community Colleges District’s Employee Training Institute (ETI) provides fee-based education and contract education programs to the San Diego region and beyond, with the goal of empowering students and the business community to earn degrees and skills certificates within many local industries.
+                        <br> 
+                        ETI also provides customized training for nonprofit organizations and public entities.<br>
+                        Instruction can take place either at the workplace or in ETI classrooms and learning labs. We offer day, evening and weekend training, developed around your organization's needs. ETI’s personalized approach allows organizations the flexibility of selecting dates, times, and even specific hours for a customized training program.<br> 
+                        ETI can also deliver comprehensive state-approved, accredited degree and certificate programs to your organization’s employees or clients.<br>
+                        ETI faculty are experts. All faculty are required to know and teach current trends and the latest advancements in their discipline or industry.<br>
+                        ETI is committed to maintaining our 40-year reputation as the leading workforce development training institution in the San Diego region, so we keep overhead costs at a minimum to ensure we can offer exceptional programs at the most competitive rate.</p>
+                        <a class="collapsed" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
                     </div>
                 </div>
-                <div class="col-md-8 col-sm-12">
-                    <h5>Steps For Success</h5>
+            </div>
+            <div class="row mission">
+                <div class="col-5">
+                    <h4 class="border-bottom border-left">Our <br>Approach</h4>
+                </div>
+            </div>
+            <div class="row mission"> 
+                <div class="col-md-10 offset-md-2">
+                <h5>Steps For Success</h5>
                     <div id="summary1">
                         <p class="collapse" id="collapseSummary1">
                         Continuous learning is vital to stay competitive in the global marketplace. We take a multidisciplinary approach to working with our clients. First, we seek to understand the organization and how things are done. We ask a lot of questions. We do this because we want to know and understand how we can really help achieve your goals. All of this helps us start to build a framework for the training program (or issue) at question. When stakeholders are in agreement, we design a solution that best fits the organization with agreed upon measurable outcomes. This is a collaborative effort.
@@ -109,13 +119,14 @@
                 </div>
             </div>
             <div class="row mission">
-                <div class="col-md-4 col-sm-12">
-                    <div class="title-left">
-                        <h3 class="border-bottom border-left">Why Partner With ETI?</h3>
-                    </div>
+                <div class="col-5"> 
+                    <h4 class="border-bottom border-left">Why Partner With ETI?</h4>
                 </div>
-                <div class="col-md-8 col-sm-0 mission"></div>
             </div>
+        </div>
+    </main>
+    <article>
+        <div class="container"> 
             <div class="row mission">
                 <div class="col-md-4 col-sm-12 why-card">
                     <div class="card">
@@ -149,13 +160,13 @@
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </article>
     <footer>
         <div class="container-fluid">
             <div class="row social">
                 <div class="col-md-8 col-12">
-                    <h2 class="invest">Invest In Your Future <br>Talk To Us</h2>
+                    <h4 class="invest">Invest In Your Future <br>Talk To Us</h4>
                 </div>
                 <div class="col-md-4 col-sm-12 talk">
                     <a href="https://www.facebook.com/">
@@ -190,25 +201,23 @@
             </div>
         </div>
     </footer>
-
     <script>
         function myFunction() {
-          var dots = document.getElementById("dots");
-          var moreText = document.getElementById("more");
-          var btnText = document.getElementById("myBtn");
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
         
-          if (dots.style.display === "none") {
+        if (dots.style.display === "none") {
             dots.style.display = "inline";
             btnText.innerHTML = "Read more"; 
             moreText.style.display = "none";
-          } else {
+        } else {
             dots.style.display = "none";
             btnText.innerHTML = "Read less"; 
             moreText.style.display = "inline";
-          }
         }
-        </script>
-        
+        }
+    </script>
 </body>
 </html>
 
