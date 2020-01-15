@@ -17,7 +17,7 @@ div.col-lg-4.offset-lg-4, div.col-lg-4.offset-lg-8 {
 .topbar { /* top blue bar w/phone number ---*/
     width: 100%;
     margin-left: 0px;
-    background-color: #40738d;
+    background-color: #29aca5;
     color: white;
     text-align: right;
     padding-right: 20px;
@@ -27,10 +27,11 @@ div.col-lg-4.offset-lg-4, div.col-lg-4.offset-lg-8 {
 }
 
 #bannersubject {
-  background-color: rgb(64, 115, 141, 0.6);
+  background-color: #40738d99;
   margin: 30px;
   font-size: 3rem;
 }
+
 /* --- navbar with logo --- */
 nav {
     margin: 10px 0px;
@@ -38,21 +39,25 @@ nav {
 .navbar {
     flex-wrap: nowrap;
 }
-.navbar-light .navbar-brand {
-    color: black !important
+.navbar-nav { /* nav font size */
+    font-size: 1.5rem;
+    
 }
-.navbar-light {
+.navbar-light .navbar-brand { /* nav font colot */
+    color: white !important;
+}
+.navbar-light { /* nav font weight */
     font-weight: bold !important;
 }
 .navbar-light:hover, .navbar-nav .nav-link:hover, 
 .navbar-light .navbar-nav .nav-link {
-    color: black !important;
+    color: white !important;
 }
 .navbar-light:hover, .nav-link:hover {
     font-size: 120% !important;
 }
 .bg-light {
-    background-color: lightseagreen !important;
+    background-color: #5eddd7 !important;
 }
 
 /* --- h4 border all pages --- */
@@ -81,14 +86,14 @@ h4.border-bottom.border-left {
   font-size: 2rem;
   color:  #7C7E7F;
 }
+/* --- font color bg-color, header --- */
 .changegray {
-    color:  rgb(211, 219, 223);
+    color:  #d3dbdf;
     text-align: center;
 }
 .bggreen {
-    background-color: lightseagreen;
+    background-color: #5eddd7;
 }
-
 .changeyellowwhite {
     background-color: #ffd24d;
     color: white;
@@ -100,6 +105,9 @@ h4.border-bottom.border-left {
 }
 .changeteal {
     color: #42dbcc;
+}
+h2.changeteal {
+    font-weight: bolder;
 }
 .bgteal {
     background-color: #42dbcc;
