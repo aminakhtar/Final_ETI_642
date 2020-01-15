@@ -3,10 +3,14 @@
     padding-right: 0px;
     padding-left: 0px;
 }
-.logoimg {  /* --- top left ETI logo --- */
+div.col-lg-4.offset-lg-4, div.col-lg-4.offset-lg-8 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#logoimg {  /* --- top left ETI logo --- */
     width: 180px;
     height: 80px;
-    margin: 5px;
+    margin: 10px;
     float: left;
     padding-left: 20px;
 }
@@ -18,15 +22,44 @@
     text-align: right;
     padding-right: 20px;
 }
-/* --- nav --- */
-nav {
-    margin: 30px 0px;
-}
-li a {
-    color: #40738d;
-    font-weight: bold;
+#video{
+  min-height: 350px;
 }
 
+#bannersubject{
+  background-color: rgb(64, 115, 141, 0.6);
+  margin: 30px;
+  font-size: 3rem;
+}
+/* --- navbar with logo --- */
+nav {
+    margin: 10px 0px;
+}
+.navbar {
+    flex-wrap: nowrap;
+}
+.navbar-light .navbar-brand {
+    color: #40738d !important
+}
+.navbar-light {
+    font-weight: bold !important;
+}
+.navbar-light:hover, .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .nav-link {
+    color: #366177 !important;
+}
+.navbar-light:hover, .nav-link:hover {
+    font-size: 120% !important;
+}
+.bg-light {
+    background-color: white !important;
+}
+
+/* --- h4 border all pages --- */
+h4.border-bottom.border-left {
+    padding-left: 7px;
+    padding-bottom: 7px;
+}
 /* --- index page --- */
 
 /*#bannersubject{
@@ -47,11 +80,37 @@ li a {
 .img-hover-zoom:hover img {
     transform: scale(1.1);
 }
+
+/* --- changed to class removed some css --- */
 #learnerparagraph { /* --- index  page ---*/
-    text-align: center;
-    font-size: 2rem;
-    color:  #7C7E7F;
+  margin: 50px 0px;
+  text-align: center;
+  font-size: 2rem;
+  color:  #7C7E7F;
 }
+.changegray {
+    color:  #7C7E7F;
+    text-align: center;
+}
+.changeyellowwhite {
+    background-color: #ffd24d;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.changeteal {
+    color: #42dbcc;
+}
+.bgteal {
+    background-color: #42dbcc;
+    padding: 40px;
+}
+.bgyellow {
+    background-color: #ffd24d;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 .bckblue { /* --- index page --- */
     background-color: #40738d;
 }
@@ -81,9 +140,7 @@ img.logos.img-thumbnail {
     justify-content: center;
     margin: 15px 0px;
 }
-/*.flex-container li a{
-    justify-content: center;
-}*/
+
 
  /*------About ETI CSS-----*/
 
@@ -93,36 +150,22 @@ img.logos.img-thumbnail {
 .mission {  /* ---css for margin above rows --- */
     margin-top: 20px;
 }
-.about-text { /* --- margin about col-md-8 ---*/
-    margin-top: 20px;
-}
-.title-left { /* --- col-md-4 --- */
-    text-align: left;
-    font-size: 26px;
-    font-weight: 400;
-}
-.why-card { /* --- margin for cards --- */
-    margin-top: 30px;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 .card-body { /* --- three cards ---*/
-  padding: 20px 15px 20px 15px;
+  padding: 20px 5px;
   line-height: 1.2rem;
 }
 .card {
-  border: 1px solid rgb(193, 222, 238);
+  border: 3px solid rgb(193, 222, 238);
 }
 .thumb-nail {
     height: 200px;
     width: auto;
 }
 .border-bottom { /* --- hr title border --- */
-    border-bottom: 2px solid #9BC2DB !important;
+    border-bottom: 5px solid #9BC2DB !important;
 }
 .border-left {
-    border-left: 2px solid #71A9CC !important;
+    border-left: 5px solid #71A9CC !important;
 }
 
 /*----read more read less----*/
@@ -217,9 +260,10 @@ footer {
     color: white;
 }
 .map {
-    height: 50%;
-    width: 50%;
-    border: 0;
+  height: 75%;
+  margin: 20px;
+  width: 50%;
+  border: 0;
 }
 .award {
     background-color: white;
@@ -240,38 +284,17 @@ footer {
 
 /*Album Logos*/
 
-#mission-1, #mission-2, #mission-3, 
-#partner-1, #partner-2, #partner-3, #partner-4, #partner-6, #partner-7, #partner-8, #partner-9, #partner-10 {
-    display: table-cell;
-    padding: 0px;
-    color: white;
-    vertical-align: middle;
-}
-#partner-5 {
-    display: table-cell;
-    padding: 0px;
-    color: black;
-    vertical-align: middle;
-}
-#partner-1, #partner-2, #partner-3, #partner-4, #partner-6, #partner-5, #partner-7, #partner-8, #partner-9, #partner-10 {
-    margin: 5px;
-}
-#mission-1, #partner-1 ,#partner-10 {
-  /* background-color:#96CC89; */
-}
-#mission-2, #partner-2 ,#partner-7 {
-  /* background-color:#0F2755; */
-}
-#mission-3, #partner-3, #partner-9 {
-  /* background-color:#71C7EC; */
-}
-#partner-4, #partner-8 {
-  /* background-color:#76A595; */
-} 
-#partner-5 {
-  /* background-color:#F5F5F5; */
-} 
-#partner-6 {
-  /* background-color:#7C7E7F; */
-} 
 
+.clientimg{
+  margin: 15px;
+}
+.img-thumbnail{
+  border: 0px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+/* Screen Reader - Usage as a mixin */
+.skip-navigation {
+  @include sr-only;
+  @include sr-only-focusable;
+}

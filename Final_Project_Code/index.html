@@ -19,19 +19,48 @@
             <div class="col">    
                 <header>
                     <div class="topbar">619-388-4967</div>
-                    <img class="logoimg" src="Assets/logo.png" alt="logo">
                 </header>
             </div>
         </div>
-        <div class="row">
+        <!-- old nav -->
+       <!--<div class="row">
+            <div class="col">
+                <img id="logoimg" src="Assets/logo.png" alt="logo">
+            </div>
             <div class="col">
                 <nav>
-                    <ul class="nav justify-content-center">
+                    <ul class="nav justify-content-left">
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Employers</a>
+                            <a class="nav-link" href="">Employers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Students</a>
+                            <a class="nav-link" href="studnets.html" target="_blank">Students</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" target="_blank">About ETI</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>-->
+        <!-- new navbar w/logo-->
+        <div class="row mission room">
+            <div class="col d-flex justify-content-center">            
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="Assets/logo.png" width="180" height="80" alt="ETI logo">
+                    </a>
+                    <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Employers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studnets.html" target="_blank">Students</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html" target="_blank">About ETI</a>
@@ -40,7 +69,12 @@
                 </nav>
             </div>
         </div>
-        <div class="row">
+        <div class="row mission room">
+            <div class="col">
+                <h2 class="text-center changeteal">Employee Training Institute</h2>
+            </div>
+        </div>
+        <div class="row mission room">
             <div class="col"> 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -59,7 +93,7 @@
                             <img class="d-block w-100" src="Assets/img4.jpg" alt="Third slide">
                         </div>
                         <div class="carousel-caption d-none d-md-block">
-                            <h1 class="container" id="bannersubject">The skills you need to succeed</h1>
+                            <h2 class="container" id="bannersubject">The skills you need to succeed</h2>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -74,111 +108,92 @@
             </div>
         </div>
     </div>
-    <!-- Triangle -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 mission room"> <!-- removed box -->
-                <p id="learnerparagraph">Learn More About The Training Programs We Offer</p>
+    <div class="container-fluid">
+        <div class="row mission room">
+            <div class="col">
+                <h4 class="text-center changeyellowwhite">
+                    Learn More About The Training Programs We Offer
+                </h4>
+                <!--<p id="learnerparagraph">Learn More About The Training Programs We Offer</p>-->
             </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
+        </div> 
+        <!--<div class="row mission">
+            <div class="col text-center">
+                <h3 class="ETISolution mission room">ETI Is Your Solution</h3>
+            </div>
+        </div>-->
+        <div class="row mission room">
+            <div class="col-4 offset-md-1">
                 <a class="img-hover-zoom"  id="emplink" href="http://www.google.com" target="_blank">
                     <img id="empimg" class="img-fluid" src="Assets/employer_writing.jpg" alt="employer" width="750">
                 </a>
             </div>
-            <div class="col-6">
+            <div class="col-4 offset-md-2">
                 <a class="img-hover-zoom"  id="stlink" href="http://www.google.com" target="_blank">
                     <img id="stimg" class="img-fluid" src="Assets/student_writing.jpg" alt="student" width="750" >
                 </a>
             </div>
         </div>
-        <div class="row">
-                <div class="col text-center">
-                    <h1 class="ETISolution mission room">ETI Is Your Solution</h1>
-                </div>
-        </div>
-        <div class="row">
-            <div class="col text-center mission room">
-                <p id="solutionbody">
-                    San Diego Community Colleges District’s Employee Training Institute (ETI) provides expertise and skills development to organizations and individuals, helping you do whatever you do, and do it better!
-                    We contribute to the economic development of the San Diego region to offer programs and services that complement those of the San Diego Community Colleges. 
-                </p>
+        <div class="row mission">
+            <div class="col-5"> 
+                <h4 class="border-bottom border-left">ETI<br> Is Your Solution</h4>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 text-center room">
+        <div class="row mission"> 
+            <div class="col-md-6 offset-md-2">
+                <p class="text-left">San Diego Community Colleges District’s Employee Training Institute (ETI) provides expertise and skills development to organizations and individuals, helping you do whatever you do, and do it better!</p>
+                <p>We contribute to the economic development of the San Diego region to offer programs and services that complement those of the San Diego Community Colleges.</p>
+                <button type="button" class="btn btn-success btnsuccess" style="margin-bottom: 5px;">Learn About ETI</button>
+            </div>
+            <div class="col-md-3 offset-md-0">
+                <iframe id="video" src="https://www.youtube.com/embed/08kKW7kWTK8"></iframe>
+            </div>
+        </div>
+       
+        <!-- old layout -->
+        <!--<div class="row">
+            <div class="col text-left mission room">
+                <p id="solutionbody">San Diego Community Colleges District’s Employee Training Institute (ETI) provides expertise and skills development to organizations and individuals, helping you do whatever you do, and do it better!<br>
+                We contribute to the economic development of the San Diego region to offer programs and services that complement those of the San Diego Community Colleges.</p>
+            </div>
+            <div class="col">
+                <iframe id="video" src="https://www.youtube.com/embed/08kKW7kWTK8"></iframe>
+            </div>
+        </div>-->
+
+        <!--<div class="row mission">
+            <div class="col text-center room">
                 <button type="button" class="btn btn-success btnsuccess" style="margin-bottom: 5px;">About ETI</button>
             </div>
-        </div>
-        <!--<div class="row">
-            <div class=" col text-center bckblue"> 
-                <iframe width="1000" height="500" class="img-fluid" src="https://www.youtube.com/embed/08kKW7kWTK8"></iframe> 
-            </div>
         </div>-->
-        <!--<div class="row">
-            <div class="col text-center"> 
-                <h3>Some of our clients</h3>
-            </div>
-        </div>-->
-       <!--
-        <div class="row">
-            <div class="col-3">
-                <img class="logos img-thumbnail" src="Assets/sdge.png" alt="">
-            </div> 
-            <div class="col-3">
-                <img class="logos img-thumbnail" src="Assets/kaser.png" alt="" class="img-thumbnail">
-            </div>
-            <div class="col-3">
-                <img class="logos img-thumbnail"src="Assets/marine.png" alt="" class="img-thumbnail">
-            </div>
-            <div class="col-3">
-                <img class="logos img-thumbnail" src="Assets/sdcommunity.png" alt="" class="img-thumbnail">
+
+        <div class="row mission room"> 
+            <div class="col-5"> 
+                <h4 class="border-bottom border-left">Our<br> Clients</h4>
             </div>
         </div>
-    -->
-    <div class="row mission text-center room">
-        <div class="col-4">
-            <iframe src="https://www.youtube.com/embed/08kKW7kWTK8"></iframe>
-        </div>
-        <div class="col-8">
-            <h3 class="text-left border-left border-bottom">Some of our clients</h3>
-            <img class="logos img-thumbnail" src="./Assets/kaser.png" alt="" class="img-thumbnail">
+        <div class="row mission room"> 
+            <div class="col-md-10 offset-md-2">
+            <img class="logos img-thumbnail" src="./Assets/padre.png" alt="" class="img-thumbnail">
             <img class="logos img-thumbnail" src="./Assets/sdcommunity.png" alt="" class="img-thumbnail">
             <img class="logos img-thumbnail" src="./Assets/marines.jpg" alt="" class="img-thumbnail">
-            <img class="logos img-thumbnail" src="./Assets/marriott.png" alt="" class="img-thumbnail">
-            <img class="logos img-thumbnail" src="./Assets/lamesa.png" alt="" class="img-thumbnail"><br>
+            <img class="logos img-thumbnail" src="./Assets/palomar.png" alt="" class="img-thumbnail"><br>
+            <img class="logos img-thumbnail" src="./Assets/lamesa.png" alt="" class="img-thumbnail">
             <img class="logos img-thumbnail" src="./Assets/sd.png" alt="" class="img-thumbnail">
             <img class="logos img-thumbnail" src="./Assets/sdge.png" class="img-thumbnail" alt="">
-            <img class="logos img-thumbnail" src="./Assets/utcaero.png" alt="" class="img-thumbnail">
+            <img class="logos img-thumbnail" src="./Assets/utcaero.png" alt="" class="img-thumbnail"><br>
             <img class="logos img-thumbnail" src="./Assets/helix.png" alt="" class="img-thumbnail">
+            <img class="logos img-thumbnail" src="./Assets/marriott.png" alt="" class="img-thumbnail">
+            <img class="logos img-thumbnail" src="./Assets/otay.png" class="img-thumbnail" alt="">
+            <img class="logos img-thumbnail" src="./Assets/kaser.png" alt="" class="img-thumbnail">
         </div>
     </div>
-    <!--<div class="row mission text-center">  
-        <div class="col-md-4 col-sm-4"><img class="logos img-thumbnail" src="./Assets/kaser.png" alt="" class="img-thumbnail"></div>
-        <div class="col-md-4 col-sm-4"><img class="logos img-thumbnail" src="./Assets/sdcommunity.png" alt="" class="img-thumbnail"></div>
-        <div class="col-md-4 col-sm-4"><img class="logos img-thumbnail" src="./Assets/marines.jpg" alt="" class="img-thumbnail"></div>
-    </div>
-    <div class="row mission text-center">
-        <div class="col-md-4 col-sm-4"><img class="logos img-thumbnail" src="./Assets/marriott.png" alt="" class="img-thumbnail"></div>
-        <div class="col-md-4 col-sm-4"><img class="logos img-thumbnail" src="./Assets/lamesa.png" alt="" class="img-thumbnail"></div>
-        <div class="col-md-4 col-sm-4"><img class="logos img-thumbnail" src="./Assets/sd.png" alt="" class="img-thumbnail"></div>
-    </div>
-    <div class="row mission text-center">
-        <div class="col-md-4 col-sm-4"><img class="logos img-thumbnail" src="./Assets/sdge.png" alt="" class="img-thumbnail"></div>
-        <div class="col-md-4 col-sm-4"><img class="logos img-thumbnail" src="./Assets/utcaero.png" alt="" class="img-thumbnail"></div>
-        <div class="col-md-4 col-sm-4"><img class="logos img-thumbnail" src="./Assets/helix.png" alt="" class="img-thumbnail"></div>
-    </div>-->
-
-    
-<!-- Grid row -->
-
     </div>
     <footer>
         <div class="container-fluid">
-            <div class="row social">
+            <div class="row mission room social">
                 <div class="col-md-8 col-12">
-                    <h2 class="invest">Invest In Your Future <br>Talk To Us</h2>
+                    <h4 class="invest">Invest In Your Future <br>Talk To Us</h4>
                 </div>
                 <div class="col-md-4 col-sm-12 talk">
                     <a href="https://www.facebook.com/">
