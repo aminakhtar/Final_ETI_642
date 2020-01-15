@@ -211,6 +211,14 @@ img.logos.img-thumbnail {
 
 
 /*Jesse*/
+/*students Page*/
+.nav-pills .nav-link.active {
+    color: black;
+    background-color: white;
+    border-radius: 0;
+    border-bottom: 1px solid #71A9CC;
+    width: fit-content;
+}
 footer {
     margin-left: 0px;
     margin-right: 0px;
