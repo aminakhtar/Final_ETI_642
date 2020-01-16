@@ -221,6 +221,13 @@ img.logos.img-thumbnail {
 
 /*Jesse*/
 /*students Page*/
+.sticky .nav-link:hover {
+    font-size: 1rem !important;
+    color: darkslategrey;
+}
+.sticky .nav-link {
+    color: steelblue;
+}
 .nav-pills .nav-link.active {
     color: black;
     background-color: white;
@@ -228,6 +235,17 @@ img.logos.img-thumbnail {
     border-bottom: 1px solid #71A9CC;
     width: fit-content;
 }
+div.col-3.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: fit-content;
+}
+div.col-9.a a {
+    color: slategrey;
+    font-weight: 700;
+}
+/*students style end*/
 footer {
     margin-left: 0px;
     margin-right: 0px;
