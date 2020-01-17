@@ -37,7 +37,8 @@ nav {
     margin: 10px 0px;
 }
 .navbar {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .navbar-nav { /* nav font size */
     font-size: 1.5rem;
@@ -59,7 +60,11 @@ nav {
 .bg-light {
     background-color: #5eddd7 !important;
 }
-
+nav button { /*position button top left*/
+    position: sticky;
+    margin-right: 18rem;
+    margin-top: -9rem;
+}
 /* --- h4 border all pages --- */
 h4.border-bottom.border-left {
     padding-left: 7px;
@@ -319,4 +324,10 @@ footer {
 .skip-navigation {
   @include sr-only;
   @include sr-only-focusable;
+}
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) {
+    .watch {
+        margin-bottom: -80px;
+    }
 }
